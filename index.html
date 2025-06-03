@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="https://github.com/yourusername" target="_blank" title="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">💼</a>
+      </div>
+    </div>
+  </nav>
+  <div class="hero-split-bg">
+    <div class="hero-left">
+      <div class="hero-content">
+        <div class="hero-subtitle">DATA SCIENTIST & DEVELOPER</div>
+        <div class="hero-title">
+          <span>SAKSHI</span><br>
+          <span>BHARVADA</span>
+        </div>
+        <div class="hero-underline"></div>
+        <svg class="hero-arrow" width="40" height="60" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 C20 30, 10 40, 10 55 M10 55 L5 50 M10 55 L15 50" stroke="#4f46e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <a href="#about" class="btn hero-btn">About Me</a>
+      </div>
+    </div>
+    <div class="hero-right"></div>
+    <button class="book-me-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">CONTACT ME</button>
+  </div>
+  <main>
+    <section id="about" class="card section">
+      <h2>About</h2>
+      <p>Short professional bio goes here. Highlight your expertise and interests.</p>
+    </section>
+    <section id="projects" class="card section">
+      <h2>Projects</h2>
+      <div class="project-categories-grid">
+        <a href="financial-modelling.html" class="project-category-card">
+          <h3>Financial Modelling</h3>
+        </a>
+        <a href="data-visualization.html" class="project-category-card">
+          <h3>Data Visualization</h3>
+        </a>
+        <a href="crypto-blockchain.html" class="project-category-card">
+          <h3>Crypto/Blockchain</h3>
+        </a>
+      </div>
+    </section>
+    <section id="resume" class="card section">
+      <h2>Resume</h2>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+    <section id="contact" class="card section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">yourusername</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
